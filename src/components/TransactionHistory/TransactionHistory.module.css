@@ -1,0 +1,25 @@
+.transactionHistory {
+  min-width: 300px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table > thead {
+  background-color: #49a8f5;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+tr {
+  text-align: center;
+  height: 40px;
+}
+
+tbody > tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+
+tbody > tr:nth-child(2n + 1) {
+  background-color: #ffffff;
+}

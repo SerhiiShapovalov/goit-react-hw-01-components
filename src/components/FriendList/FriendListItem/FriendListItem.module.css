@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px;
-  width: 280px;
+  padding: 5px 15px;
+  width: 270px;
   background-color: #fff;
   border: none;
   border-radius: 5px;
@@ -12,9 +12,9 @@
 }
 
 .status {
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
   border-radius: 50%;
 }
 
@@ -30,7 +30,7 @@
 
 .avatar {
   padding: 15px;
-  margin-right: 20px;
+  margin-right: 15px;
   border: 1px solid #dadada;
   border-radius: 5px;
 }
