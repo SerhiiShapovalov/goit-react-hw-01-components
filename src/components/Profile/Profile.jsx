@@ -24,7 +24,9 @@ export default function Profile({
         </li>
         <li className={css.item}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
+          <span className={css.quantity}>
+            {new Intl.NumberFormat('en-US').format(views)}
+          </span>
         </li>
         <li className={css.item}>
           <span className={css.label}>Likes</span>
@@ -42,7 +44,7 @@ Profile.prototype = {
   avatar: PropTypes.string,
   stats: PropTypes.shape({
     followers: PropTypes.number,
-    views: PropTypes.number,
+    views: new Intl.NumberFormat().format(PropTypes.number),
     likes: PropTypes.number,
   }),
 };

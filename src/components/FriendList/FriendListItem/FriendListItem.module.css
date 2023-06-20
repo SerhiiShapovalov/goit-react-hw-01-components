@@ -1,0 +1,41 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 280px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.status__true {
+  composes: status;
+  background-color: #1bc429;
+}
+
+.status__false {
+  composes: status;
+  background-color: #ce2121;
+}
+
+.avatar {
+  padding: 15px;
+  margin-right: 20px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
