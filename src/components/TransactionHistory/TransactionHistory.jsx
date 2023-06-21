@@ -3,7 +3,7 @@ import css from './TransactionHistory.module.css';
 
 export default function TransactionHistory({ items }) {
   return (
-    <div>
+    <div className={css.wrapperTransactionHistory}>
       <table className={css.transactionHistory}>
         <thead>
           <tr>
@@ -29,10 +29,11 @@ export default function TransactionHistory({ items }) {
 
 TransactionHistory.prototype = {
   items: PropTypes.arrayOf(
-    PropTypes.shape({
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.string,
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
